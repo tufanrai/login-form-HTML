@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url('./images/desktop\ wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wrapper{
+    max-width: 1250px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+.wrapper header nav ul li:first-child{
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.wrapper header nav ul li{
+    height: 50px;
+}
+
+.wrapper header nav ul li a{
+    width: 100%;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 200ms ease;
+}
+
+.wrapper header nav ul li #btn-login{
+    border: 1px solid antiquewhite;
+    border-radius: 10px 0;
+}
+
+.wrapper header nav ul li #btn-login:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.wrapper header nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.wrapper header nav ul li a:hover::before{
+    width: 100%;
+}
+
+.wrapper main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper main .login-card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid aliceblue;
+    border-radius: 30px 0;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+.wrapper main .login-card h2{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.wrapper main .login-card #btn-cancel{
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: 16em;
+    padding: 13px;
+    cursor: pointer;
+    border-radius: 0 10px;
+    background-color: black;
+}
+
+
+.wrapper main .login-card .email, .password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 1.5rem;
+}
+
+.wrapper main .login-card input{
+    width: 100%;
+    padding: 10px 15px 10px 25px;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    font-size: 15px;
+    font-weight: 300;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.wrapper main .login-card input:focus{
+    outline: none;
+}
+
+.wrapper main .login-card .password a{
+    width: 100%;
+    text-align: end;
+    margin-top: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.wrapper main .login-card .password a:hover{
+    width: 100%;
+    text-align: end;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.wrapper main .login-card .submitBtn{
+    padding: 15px 25px;
+}
+
+.wrapper main .login-card .submitBtn input{
+    border: 1px solid antiquewhite;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(240, 248, 255, 0.769);
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+.wrapper main .login-card .submitBtn input:hover{
+    color: black;
+    background-color: rgba(240, 248, 255, 0.649);
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+hr{
+    height: 1px ;
+    margin: 0 20px;
+    background-color: aliceblue;
+    border: none;
+}
+
+.wrapper main .login-card .createAccount{
+    text-align: center;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.wrapper main .login-card i{
+    position: relative;
+    top: 4em;
+    left: 0;
+}
+
